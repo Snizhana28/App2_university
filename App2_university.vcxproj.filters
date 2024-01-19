@@ -5,7 +5,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Library.h" />
-    <ClInclude Include="Man.h" />
-    <ClInclude Include="Student.h" />
+    <ClInclude Include="Liquid.h" />
+    <ClInclude Include="Alcohol.h" />
   </ItemGroup>
 </Project>

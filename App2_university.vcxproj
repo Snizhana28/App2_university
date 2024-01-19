@@ -130,9 +130,9 @@
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Alcohol.h" />
     <ClInclude Include="Library.h" />
-    <ClInclude Include="Man.h" />
-    <ClInclude Include="Student.h" />
+    <ClInclude Include="Liquid.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

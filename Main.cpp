@@ -1,17 +1,28 @@
-#include "Rightangled.h"
+#include "Student.h"
 
 int main()
 {
-    Rightangled triangle1(5.0, 4.0);
-    Rightangled triangle2(6.0, 12.0);
+    try
+    {
+        Student s("Snizhana", 18, 'W', 47.5, 2023);
 
-    cout << "Triangle 1: " << triangle1 << endl;
-    cout << "Triangle 2: " << triangle2 << endl;
+        s.displayInfo();
 
-    Rightangled sum = triangle1 + triangle2;
-    cout << "Sum of triangles: " << sum << endl;
+        s.setName("Snizhana");
+        s.setAge(-858);
+        s.setWeight(48.5);
+        s.increaseYearOfStudy();
 
-    Rightangled scaled = triangle1 * 2.0;
-    cout << "Scaled triangle: " << scaled << endl;
+        cout << "\nChanged information" << endl;
+        s.displayInfo();
+    }
+    catch (const std::exception& e)
+    {
+        cerr << "Exception: " << e.what() << endl;
+    }
+    catch (...)
+    {
+        cerr << "An unknown exception occurred in main()" << endl;
+    }
 	return 0;
 }
